@@ -1,3 +1,12 @@
 #main-body {
-    background-color: #EEF;
+    background-color: #e9ecef;
+}
+
+#me-image {
+    max-height: 300px;
+    border-top-left-radius: 5rem !important;
+    border-top-right-radius: 5rem !important;
+    border-bottom-right-radius: 5rem !important;
+    border-bottom-left-radius: 5rem !important;
+    border: 5px solid #dee2e6;
 }
