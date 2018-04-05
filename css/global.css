@@ -10,3 +10,11 @@
     border-bottom-left-radius: 5rem !important;
     border: 5px solid #dee2e6;
 }
+
+#social-links {
+    padding-top: 1rem;
+}
+
+#social-links a {
+    color: #000;
+}
