@@ -34,7 +34,6 @@
 					<div id="social-links" class="text-center">
 						<h2>
 							<a href="https://www.linkedin.com/in/vpaterno/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-							<a href="https://www.instagram.com/vince.paterno/" target="_blank"><i class="fab fa-instagram"></i></a>
 						</h2>
 						
 					</div>
@@ -42,11 +41,66 @@
 				<div id="description" class="col-lg-9 col-lg-8 col-6">
 					<h2>Hello!</h2>
 					<p>Vince here, I like to create, break, and maintain things.</p>
-					<ul>
-						<li>dev</li>
-						<li>ops</li>
-						<li>test</li>
-					</ul>
+					<div id="description-buttons">
+						<button id="description-button" class="btn btn-dark btn-sm" type="button" data-toggle="collapse" data-target="#devInfo" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-code"></i>
+						</button>
+						<button id="description-button" class="btn btn-dark btn-sm" type="button" data-toggle="collapse" data-target="#opsInfo" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-terminal"></i>
+						</button>
+						<button id="description-button" class="btn btn-dark btn-sm" type="button" data-toggle="collapse" data-target="#sysInfo" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-server"></i>
+						</button>
+						<button id="description-button" class="btn btn-dark btn-sm" type="button" data-toggle="collapse" data-target="#testInfo" aria-expanded="false" aria-controls="collapseExample">
+						<i class="fas fa-vial"></i>
+						</button>
+					</div>
+					<div id="description-content">
+						<p>
+							<div class="collapse" id="devInfo" data-parent="#description-content">
+								
+								<div class="card card-body">
+									<h2 class="card-title">dev</h2>
+									<ul>
+										<li>perl</li>
+										<li>python</li>
+										<li>objective-c</li>
+										<li>mysql</li>
+										<li>JavaScript</li>
+										<li>HTML/CSS</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="opsInfo" data-parent="#description-content">
+								<div class="card card-body">
+									<h2 class="card-title">ops</i></h2>
+									<ul>
+										<li>icinga2</li>
+										<li>nagios</li>
+										<li>apache</li>
+										<li>squid</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="sysInfo" data-parent="#description-content">
+								<div class="card card-body">
+									<h2 class="card-title">sys</i></h2>
+									<ul>
+										<li>CentOS / RedHat</li>
+										<li>OS X</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="testInfo" data-parent="#description-content">
+								<div class="card card-body">
+									<h2 class="card-title">test</h2>
+									<ul>
+										<li>selenium</li>
+									</ul>
+								</div>
+							</div>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
