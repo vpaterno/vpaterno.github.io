@@ -8,7 +8,8 @@
     border-top-right-radius: 5rem !important;
     border-bottom-right-radius: 5rem !important;
     border-bottom-left-radius: 5rem !important;
-    border: 5px solid #dee2e6;
+    border: .5rem solid #dee2e6;
+    margin-bottom: 1rem;
 }
 
 #social-links {
