@@ -1,5 +1,13 @@
 #main-body {
-    background-color: #e9ecef;
+    /* background-color: #fff; */
+}
+
+#top {
+    background-color: #fff;
+}
+
+#footer {
+    margin-top: 2rem;
 }
 
 #me-image {
@@ -8,7 +16,7 @@
     border-top-right-radius: 5rem !important;
     border-bottom-right-radius: 5rem !important;
     border-bottom-left-radius: 5rem !important;
-    border: .5rem solid #dee2e6;
+    border: .25rem solid #17a2b8;
     margin-bottom: 1rem;
 }
 
@@ -18,5 +26,18 @@
 }
 
 #social-links a {
-    color: #000;
+    color: #17a2b8;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+}
+
+hr {
+    border-top: .25rem solid rgba(0,0,0,.1);
 }
