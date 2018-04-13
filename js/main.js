@@ -13,10 +13,16 @@ $(function() {
                 updateClass(this, '.description-button', 'btn-white-top','btn-white-top');
         });
         
+        //On click of nav items change/clear class
+        $( '#nav-left .nav-item' ).on( "click", function() {
+                updateClass(this, '#nav-left .nav-item', 'active','active');
+        });
+        
         // On click of "you"
         $( '#you-link' ).on( "click", function() {
                 $('#me').load('./you.html');
         });
+
 });
 
 // Greetings
@@ -30,7 +36,6 @@ function fillInGreeting() {
 
 // Change border on selected button
 function updateClass(thing, all, a, r) {
-        console.log(thing);
         $(all).removeClass(r);
         $(thing).addClass(a);
 }
