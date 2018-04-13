@@ -36,6 +36,14 @@ function fillInGreeting() {
 
 // Change border on selected button
 function updateClass(thing, all, a, r) {
-        $(all).removeClass(r);
-        $(thing).addClass(a);
+        
+        // If the class is already on what was clicked
+        // They're collapsing, just remove the class
+        if ($(thing).hasClass(a)) {
+                $(thing).removeClass(r);
+        // Else, they're expanding
+        } else {
+                $(all).removeClass(r);
+                $(thing).addClass(a);
+        }
 }
