@@ -92,3 +92,7 @@ hr {
     border-top: 1px solid white !important;
     border-radius: 0;
 }
+
+.navbar-toggler {
+    border-color: #343a40 !important;
+}
