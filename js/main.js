@@ -10,8 +10,12 @@ $(function() {
         
         //On click of button change/clear class
         $( '.description-button' ).on( "click", function() {
-                console.log('clicked');
                 updateClass(this, '.description-button', 'btn-white-top','btn-white-top');
+        });
+        
+        // On click of "you"
+        $( '#you-link' ).on( "click", function() {
+                $(this).load('./you.html');
         });
 });
 
