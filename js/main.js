@@ -8,9 +8,14 @@ $(function() {
                 fillInGreeting();
         });
         
-        //On click of button change/clear class
+        //On click of button change/clear class and scroll into view.
         $( '.description-button' ).on( "click", function() {
                 updateClass(this, '.description-button', 'btn-white-top','btn-white-top');
+                
+                // Scroll into view
+                $('html, body').animate({
+                        scrollTop: $(this).offset().top - 15
+                });
         });
         
         //On click of nav items change/clear class
