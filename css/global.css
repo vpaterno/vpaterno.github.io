@@ -1,32 +1,67 @@
-#main-body {
-    /* background-color: #fff; */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Nunito|Playfair+Display');
+
+body {
+  font-family: 'Playfair Display', sans-serif !important;
 }
 
-#top {
-    background-color: #fff;
+#main {
+}
+
+#main-body {
+    background-color: #343a40;
 }
 
 #footer {
     margin-top: 2rem;
 }
 
+#me {
+    background-color: #fff;
+    padding-top: 5rem;
+}
+
 #me-image {
     max-height: 300px;
-    border-top-left-radius: 5rem !important;
-    border-top-right-radius: 5rem !important;
-    border-bottom-right-radius: 5rem !important;
-    border-bottom-left-radius: 5rem !important;
-    border: .25rem solid #17a2b8;
-    margin-bottom: 1rem;
+}
+
+#me-image-bottom {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+}
+
+#description-control {
+}
+
+#description-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#description-toggles-left {
+    padding: 0;
+    color: #000;
+    background-color: #17a2b8;
+}
+
+#description-toggles-left-nav {
+}
+
+#description-toggles-right {
+    padding: 1rem;
+}
+
+#description-content {
+    background-color: #17a2b8;
 }
 
 #social-links {
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #social-links a {
-    color: #17a2b8;
+    color: #fff; /* #17a2b8; */
 }
 
 .navbar-dark .navbar-brand {
@@ -40,4 +75,15 @@
 
 hr {
     border-top: .25rem solid rgba(0,0,0,.1);
+}
+
+.card-no-border {
+    border: none;
+    border-radius: 0;
+    background-color: #17a2b8;
+}
+
+.btn-white-top {
+    border-top: 1px solid white !important;
+    border-radius: 0;
 }

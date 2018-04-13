@@ -7,6 +7,12 @@ $(function() {
         $( '#greeting, #me-image' ).on( "click", function() {
                 fillInGreeting();
         });
+        
+        //On click of button change/clear class
+        $( '.description-button' ).on( "click", function() {
+                console.log('clicked');
+                updateClass(this, '.description-button', 'btn-white-top','btn-white-top');
+        });
 });
 
 // Greetings
@@ -16,4 +22,11 @@ var greetings = ['Hello!', 'Hola!', 'Kamusta!', 'Salut!', 'Hallo!', 'Ciao!', 'Ah
 function fillInGreeting() {
         var greeting = greetings[Math.floor(Math.random()*greetings.length)];
         $( '#greeting' ).html(greeting);	
+}
+
+// Change border on selected button
+function updateClass(thing, all, a, r) {
+        console.log(thing);
+        $(all).removeClass(r);
+        $(thing).addClass(a);
 }
