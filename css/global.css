@@ -56,7 +56,13 @@ body {
     padding: 1rem;
 }
 
-#description-toggles-right button:hover {
+#description-toggles-right {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+#description-toggles-right .btn,button:hover {
+    border-radius: 0;
     background-color: #343a40;
     border-color: #343a40;
 }
