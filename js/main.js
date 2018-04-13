@@ -15,7 +15,7 @@ $(function() {
         
         // On click of "you"
         $( '#you-link' ).on( "click", function() {
-                $(this).load('./you.html');
+                $('#me').load('./you.html');
         });
 });
 
