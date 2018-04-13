@@ -24,6 +24,11 @@ body {
     max-height: 300px;
 }
 
+#you-image {
+    font-size: 19rem;
+    max-height: 300px;
+}
+
 #me-image-bottom {
     padding-top: 3rem;
     padding-bottom: 1rem;
