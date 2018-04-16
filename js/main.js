@@ -20,16 +20,6 @@ $(function() {
                         scrollTop: $(this).offset().top - 15
                 });
         });
-        
-        //On click of nav items change/clear class
-        $( '#nav-left .nav-item' ).on( "click", function() {
-                updateClass(this, '#nav-left .nav-item', 'active','active');
-        });
-        
-        // On click of "you"
-        $( '#you-link' ).on( "click", function() {
-                $('#me').load('./you.html');
-        });
 
 });
 
