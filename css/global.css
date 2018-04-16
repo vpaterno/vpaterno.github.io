@@ -107,3 +107,20 @@ hr {
 .navbar-toggler {
     border-color: #343a40 !important;
 }
+
+.input-bottom-border {
+    border-bottom: 2px solid white !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    background: transparent !important;
+}
+
+.textarea-no-radius {
+    border-radius: 0;
+}
+
+.testimonials-carousel-content  {
+    min-height: 300px;
+}

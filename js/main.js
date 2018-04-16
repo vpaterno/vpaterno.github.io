@@ -20,6 +20,12 @@ $(function() {
                         scrollTop: $(this).offset().top - 15
                 });
         });
+        
+        // Contact form submit
+        $('#google-form').on('submit', function(e) {
+                $('#google-form *').fadeOut(2000);
+                $('#form-message').text('Thank you! I\'ll get back to your query as soon as possible.');
+        });
 
 });
 
