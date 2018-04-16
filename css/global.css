@@ -15,7 +15,7 @@ body {
     margin-top: 2rem;
 }
 
-#me {
+#me,#you {
     background-color: #fff;
     padding-top: 5rem;
 }
@@ -29,7 +29,7 @@ body {
     max-height: 300px;
 }
 
-#me-image-bottom {
+#me-image-bottom,#you-image-bottom {
     padding-top: 3rem;
     padding-bottom: 1rem;
     padding-left: 3rem;

@@ -3,6 +3,9 @@ $(function() {
         // Fill in greeting
         fillInGreeting();
         
+        // Select proper active nav link
+        activateCurrentPageNav();
+        
         //On click of greeting or image
         $( '#greeting, #me-image' ).on( "click", function() {
                 fillInGreeting();
@@ -39,7 +42,7 @@ function fillInGreeting() {
         $( '#greeting' ).html(greeting);	
 }
 
-// Change border on selected button
+// Add/remove classes
 function updateClass(thing, all, a, r) {
         
         // If the class is already on what was clicked
@@ -50,5 +53,20 @@ function updateClass(thing, all, a, r) {
         } else {
                 $(all).removeClass(r);
                 $(thing).addClass(a);
+        }
+}
+
+// Select current page nav based on current uri
+function activateCurrentPageNav() {
+        // Get current page path
+        var path = window.location.pathname;
+        console.log(path);
+        
+        // If you.html use activate you
+        if (path.includes('you.html')) {
+                $('#you-nav-link').addClass('active');
+        // Otherwise default to me
+        } else {
+                $('#me-nav-link').addClass('active');
         }
 }

@@ -1,7 +1,181 @@
-<div id="you-image" class="d-flex flex-column align-items-center justify-content-center">
-        <i class="fas fa-question"></i>
-</div>
-<div id="me-image-bottom" class="">
-        <h2 id="you-greeting">Pleasure meeting you!</h2>
-        <p>You here, you need to create, test, break, and maintain things.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+		<meta property="og:title" content="vpaterno." />
+		<meta property="og:image" content="https://vpaterno.bitbucket.io/images/me.jpg" />
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+		<!-- Icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+		
+		<!-- Our CSS -->
+		<link rel="stylesheet" href="./css/global.css">
+			
+		<!-- Our JS -->
+		<script src="./js/main.js"></script>
+			
+		<title>vpaterno.</title>
+	</head>
+
+	<body id="main-body">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="./index.html" aria-label="navbar-brand"><i class="fas fa-code"></i> <strong>&nbsp;&nbsp;vp</strong></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-align-right"></i>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarMain">
+			<ul class="navbar-nav mr-auto" id="nav-left"">
+				<li id="me-nav-link" class="nav-item">
+					<a class="nav-link" href="./index.html">me</a>
+				</li>
+				<li id="you-nav-link" class="nav-item">
+					<a id="you-link" class="nav-link" href="./you.html">you</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav flex-row ml-auto justify-content-between" id="nav-social">
+				<li class="nav-item active">
+					<a class="nav-link" href="https://www.linkedin.com/in/vpaterno/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="https://www.bitbucket.com/vpaterno/" target="_blank" aria-label="bitbucket"><i class="fab fa-bitbucket"></i></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="https://www.github.com/vpaterno/" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="https://stackexchange.com/users/366216/vpaterno" target="_blank" aria-label="stackexchange"><i class="fab fa-stack-exchange"></i></a>
+				</li>
+			</ul>
+		</div>
+		</nav>
+		
+		<div class="container" id="main">
+			<div class="row">
+                                <div id="description-container" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<div id="description-control" class="no-gutters row">
+						<div id="description-toggles-right" class="col-10 justify-content-around d-flex">
+							<button id="dev-button" class="description-button btn btn-dark" type="button" data-toggle="collapse" data-target="#devInfo" aria-expanded="false" aria-controls="collapseExample" aria-label="devInfo">
+							<i class="fas fa-code"></i>
+							</button>
+							<button id="test-button" class="description-button btn btn-dark" type="button" data-toggle="collapse" data-target="#testInfo" aria-expanded="false" aria-controls="collapseExample" aria-label="testInfo">
+							<i class="fas fa-vial"></i>
+							</button>
+							<button id="ops-button" class="description-button btn btn-dark" type="button" data-toggle="collapse" data-target="#opsInfo" aria-expanded="false" aria-controls="collapseExample" aria-label="opsInfo">
+							<i class="fas fa-terminal"></i>
+							</button>
+							<button id="sys-button" class="description-button btn btn-dark" type="button" data-toggle="collapse" data-target="#sysInfo" aria-expanded="false" aria-controls="collapseExample" aria-label="sysInfo">
+							<i class="fas fa-server"></i>
+							</button>
+							<button id="tool-button" class="description-button btn btn-dark" type="button" data-toggle="collapse" data-target="#toolInfo" aria-expanded="false" aria-controls="collapseExample" aria-label="toolInfo">
+							<i class="fas fa-wrench"></i>
+							</button>
+						</div>
+                                                <div id="description-toggles-left" class="col-2 d-flex flex-column align-items-center justify-content-center">
+							<i class="fas fa-angle-double-down"></i>
+						</div>
+					</div>
+					<div id="description-content">
+						
+							<div class="collapse" id="devInfo" data-parent="#description-content">
+								
+								<div class="card card-body card-no-border">
+									<h2 class="card-title">dev</h2>
+									<ul>
+										<li>Perl</li>
+										<li>Python</li>
+										<li>Objective-C</li>
+										<li>VBA</li>
+										<li>MySQL</li>
+										<li>Javascript</li>
+										<li>HTML/CSS</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="testInfo" data-parent="#description-content">
+								<div class="card card-body card-no-border">
+									<h2 class="card-title">test</h2>
+									<ul>
+										<li>Scripting / Automation</li>
+										<li>Test plans, cases, & processes</li>
+										<li>UI testing</li>
+										<li>Regression testing</li>
+										<li>Performance testing</li>
+										<li>Bug tracking</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="opsInfo" data-parent="#description-content">
+								<div class="card card-body card-no-border">
+									<h2 class="card-title">ops</i></h2>
+									<ul>
+										<li>Release management</li>
+										<li>Technical documentation</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="sysInfo" data-parent="#description-content">
+								<div class="card card-body card-no-border">
+									<h2 class="card-title">sys</i></h2>
+									<ul>
+										<li>CentOS / RedHat</li>
+										<li>OS X</li>
+									</ul>
+								</div>
+							</div>
+							<div class="collapse" id="toolInfo" data-parent="#description-content">
+								<div class="card card-body card-no-border">
+									<h2 class="card-title">tools</h2>
+									<ul>
+										<li>Icinga2</li>
+										<li>Nagios</li>
+										<li>Selenium</li>
+										<li>Jira</li>
+										<li>Confluence</li>
+										<li>Apache</li>
+										<li>Squid</li>
+									</ul>
+								</div>
+							</div>
+						
+					</div>
+				</div>
+                                <div id="you" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                        <div id="you-image" class="d-flex flex-column align-items-center justify-content-center">
+                                                <i class="fas fa-question"></i>
+                                        </div>
+                                        <div id="you-image-bottom" class="">
+                                                <h2 id="you-greeting">Pleasure meeting you!</h2>
+                                                <p>You here, you have a need to create, test, break, or maintain things.</p>
+                                        </div>
+                                </div>
+			</div>
+		<div class="container" id="footer">
+			<div class="row text-center">
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" id="footer-left">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" id="footer-middle">
+                                </div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center" id="footer-right">
+					<div id="social-links">
+						<a href="https://www.linkedin.com/in/vpaterno/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.bitbucket.com/vpaterno/" target="_blank" aria-label="bitbucket"><i class="fab fa-bitbucket"></i></a>
+						<a href="https://www.github.com/vpaterno/" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
+						<a href="https://stackexchange.com/users/366216/vpaterno" target="_blank" aria-label="stackexchange"><i class="fab fa-stack-exchange"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
