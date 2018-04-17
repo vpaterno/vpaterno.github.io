@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Nunito|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Nunito|Playfair+Display|Source+Code+Pro');
 
 body {
   font-family: 'Playfair Display', sans-serif !important;
@@ -25,11 +25,13 @@ body {
 }
 
 #you-image {
-    font-size: 19rem;
+    font-family: 'Source Code Pro', sans-serif !important;
+    font-size: 5rem;
     max-height: 300px;
+    padding-bottom: 2rem;
 }
 
-#me-image-bottom,#you-image-bottom {
+#me-image-bottom,#you-image-top {
     padding-top: 3rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
@@ -123,4 +125,20 @@ hr {
 
 .testimonials-carousel-content  {
     min-height: 300px;
+}
+
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
