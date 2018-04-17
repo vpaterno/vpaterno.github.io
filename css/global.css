@@ -123,10 +123,32 @@ hr {
     border-radius: 0;
 }
 
-.testimonials-carousel-content  {
-    min-height: 300px;
+.testimonials-card {
+
 }
 
+.testimonials-carousel-content {
+    min-height: 400px !important;
+}
+
+.testimonials-carousel-item {
+    margin: 1rem;    
+}
+
+.testimonials-info {
+    padding-top: 1.5rem;
+}
+
+.testimonials-name {
+    font-size: 1.5rem;
+}
+
+.testimonials-role {
+}
+
+.testimonials-quote {
+    font-size: 5rem;
+}
 
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
