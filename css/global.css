@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Nunito|Playfair+Display|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Code+Pro');
 
 body {
   font-family: 'Playfair Display', sans-serif !important;
@@ -65,6 +65,7 @@ body {
 
 #description-content {
     background-color: #17a2b8;
+    font-family: 'Source Code Pro', sans-serif !important;
 }
 
 #social-links {
