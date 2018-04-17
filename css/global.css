@@ -45,16 +45,13 @@ body {
     padding-right: 0;
 }
 
-#description-toggles-left {
+#description-toggles-collapse {
     padding: 0;
     color: #000;
     background-color: #17a2b8;
 }
 
-#description-toggles-left-nav {
-}
-
-#description-toggles-right {
+#description-toggles {
     padding: 1rem;
 }
 
